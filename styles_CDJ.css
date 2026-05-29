@@ -300,6 +300,24 @@ body {
   font-size: 3rem;
   position: relative;
 }
+
+.product-img_CDJ {
+  width: 100%;
+  height: 170px;
+  background: var(--blue-light_CDJ);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image_CDJ {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .product-new-tag_CDJ {
   position: absolute; top: 8px; right: 8px;
   font-size: 0.55rem; font-weight: 700;
