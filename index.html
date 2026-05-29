@@ -280,5 +280,28 @@
       </div>
     </div>
   </footer>
+
+  
+  <!-- ========================
+       JAVASCRIPT
+       ======================== -->
+  <script>
+    // --- Menú hamburguesa ---
+    const toggle = document.getElementById('navToggle_CDJ');
+    const links  = document.getElementById('navLinks_CDJ');
+    toggle.addEventListener('click', () => links.classList.toggle('open_CDJ'));
+
+    // --- Scroll reveal ---
+    const reveals = document.querySelectorAll('.reveal_CDJ');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible_CDJ'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
