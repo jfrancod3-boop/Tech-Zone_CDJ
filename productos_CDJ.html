@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos | TechZone</title>
+  <link rel="stylesheet" href="css/productos_CDJ.css" />
+</head>
+<body>
+
+  <!-- ========================
+       NAVBAR
+       ======================== -->
+  <nav class="navbar_CDJ">
+    <a href="index_CDJ.html" class="nav-logo_CDJ">TECH<span>ZONE</span></a>
+    <button class="nav-toggle_CDJ" id="navToggle_CDJ" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links_CDJ" id="navLinks_CDJ">
+      <li><a href="index_CDJ.html">Inicio</a></li>
+      <li><a href="productos_CDJ.html" class="active_CDJ">Productos</a></li>
+      <li><a href="acerca_CDJ.html">Acerca de</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========================
+       PAGE HEADER
+       ======================== -->
+  <header class="page-header_CDJ">
+    <span class="page-tag_CDJ">Catálogo Completo</span>
+    <h1 class="page-title_CDJ">Nuestros <span>Productos</span></h1>
+    <p class="page-subtitle_CDJ">Tecnología de vanguardia para cada necesidad</p>
+  </header>
+
+  <!-- ========================
+       CATÁLOGO
+       ======================== -->
+  <div class="catalog-wrapper_CDJ">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar_CDJ">
+
+      <div class="sidebar-block_CDJ">
+        <div class="sidebar-title_CDJ">Buscar</div>
+        <div class="search-box_CDJ">
+          <input type="text" class="search-input_CDJ" id="searchInput_CDJ" placeholder="Buscar producto..." />
+          <button class="search-btn_CDJ">⌕</button>
+        </div>
+      </div>
+
+      <div class="sidebar-block_CDJ">
+        <div class="sidebar-title_CDJ">Categorías</div>
+        <button class="filter-btn_CDJ active-filter_CDJ" data-filter="todos">
+          Todos <span class="count-badge_CDJ">25</span>
+        </button>
+        <button class="filter-btn_CDJ" data-filter="audio">
+          🎧 Audio <span class="count-badge_CDJ">5</span>
+        </button>
+        <button class="filter-btn_CDJ" data-filter="perifericos">
+          ⌨️ Periféricos <span class="count-badge_CDJ">5</span>
+        </button>
+        <button class="filter-btn_CDJ" data-filter="almacenamiento">
+          💾 Almacenamiento <span class="count-badge_CDJ">5</span>
+        </button>
+        <button class="filter-btn_CDJ" data-filter="accesorios">
+          🔧 Accesorios <span class="count-badge_CDJ">5</span>
+        </button>
+        <button class="filter-btn_CDJ" data-filter="monitores">
+          🖥️ Monitores <span class="count-badge_CDJ">5</span>
+        </button>
+      </div>
+
+      <div class="sidebar-block_CDJ">
+        <div class="sidebar-title_CDJ">Ordenar por</div>
+        <select class="sort-select_CDJ" id="sortSelect_CDJ" style="width:100%;">
+          <option value="default">Por defecto</option>
+          <option value="precio-asc">Precio: Menor a Mayor</option>
+          <option value="precio-desc">Precio: Mayor a Menor</option>
+          <option value="nombre">Nombre A-Z</option>
+        </select>
+      </div>
+
+    </aside>
+
+    <!-- ÁREA DE PRODUCTOS -->
+    <main class="products-area_CDJ">
+
+      <div class="toolbar_CDJ">
+        <span class="toolbar-count_CDJ">Mostrando <span id="countDisplay_CDJ">25</span> productos</span>
+      </div>
+
+      <div class="products-grid_CDJ" id="productsGrid_CDJ">
+        <!-- Los productos se generan con JavaScript -->
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ========================
+       FOOTER
+       ======================== -->
+  <footer class="footer_CDJ">
+    <div class="footer-inner_CDJ">
+      <div class="footer-top_CDJ">
+        <div class="footer-brand_CDJ">
+          <a href="index_CDJ.html" class="nav-logo_CDJ" style="font-size:1.2rem;">TECH<span>ZONE</span></a>
+          <p>Accesorios tech de próxima generación. Tu destino para todo lo que necesitas en tecnología.</p>
+          <div class="social-links_CDJ">
+            <a href="https://www.facebook.com"  target="_blank" class="social-link_CDJ" title="Facebook">f</a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link_CDJ" title="Instagram">in</a>
+            <a href="https://www.twitter.com"   target="_blank" class="social-link_CDJ" title="Twitter/X">𝕏</a>
+            <a href="https://www.youtube.com"   target="_blank" class="social-link_CDJ" title="YouTube">▶</a>
+            <a href="https://www.tiktok.com"    target="_blank" class="social-link_CDJ" title="TikTok">♪</a>
+          </div>
+        </div>
+        <div class="footer-col_CDJ">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index_CDJ.html">Inicio</a></li>
+            <li><a href="productos_CDJ.html">Productos</a></li>
+            <li><a href="acerca_CDJ.html">Acerca de</a></li>
+          </ul>
+        </div>
+        <div class="footer-col_CDJ">
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="#">Audio</a></li>
+            <li><a href="#">Periféricos</a></li>
+            <li><a href="#">Almacenamiento</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Monitores</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom_CDJ">
+        <p>© 2026 TECHZONE — TODOS LOS DERECHOS RESERVADOS</p>
+        <p>HECHO CON ⚡ POR CDJ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================
+       JAVASCRIPT
+       ======================== -->
+  <script>
+    // ---- Datos de productos ----
+    const productos_CDJ = [
+      // AUDIO
+      { id:1,  cat:'audio',         emoji:'🎧', nombre:'ProSound X9 ANC',       desc:'Cancelación de ruido activa · 40h batería · Bluetooth 5.3', precio:850,  precioOld:1200, tag:'nuevo'  },
+      { id:2,  cat:'audio',         emoji:'🎧', nombre:'BassMax Pro 360',        desc:'Sonido envolvente 360° · Drivers 50mm · Plegable',          precio:420,  precioOld:580,  tag:'oferta' },
+      { id:3,  cat:'audio',         emoji:'🎤', nombre:'StreamVox USB Mic',      desc:'Micrófono cardioide · Plug & Play · 192kHz/24bit',          precio:650,  precioOld:null, tag:'nuevo'  },
+      { id:4,  cat:'audio',         emoji:'🔊', nombre:'CubeSound 360 Speaker',  desc:'Altavoz portátil · IP67 waterproof · 20h batería',          precio:380,  precioOld:500,  tag:'oferta' },
+      { id:5,  cat:'audio',         emoji:'🎵', nombre:'AirBud Pro TWS',         desc:'Earbuds inalámbricos · ANC · Carga inalámbrica',            precio:550,  precioOld:720,  tag:'nuevo'  },
+
+      // PERIFÉRICOS
+      { id:6,  cat:'perifericos',   emoji:'⌨️', nombre:'NeonKeys RGB Pro',       desc:'Mecánico · Switch Red · RGB por tecla · TKL',               precio:650,  precioOld:900,  tag:'nuevo'  },
+      { id:7,  cat:'perifericos',   emoji:'🖱️', nombre:'GlideX Mouse 16K',       desc:'16,000 DPI · Inalámbrico · RGB · 6 botones',                precio:420,  precioOld:580,  tag:'nuevo'  },
+      { id:8,  cat:'perifericos',   emoji:'🖱️', nombre:'PrecisionClick M200',    desc:'Ergonómico · 6400 DPI · Cable trenzado',                    precio:180,  precioOld:null, tag:'stock'  },
+      { id:9,  cat:'perifericos',   emoji:'⌨️', nombre:'CompactType 60%',        desc:'Teclado compacto · Hot-swap · Aluminio CNC',                precio:890,  precioOld:1100, tag:'oferta' },
+      { id:10, cat:'perifericos',   emoji:'🕹️', nombre:'StreamDeck Mini',        desc:'6 teclas programables · LCD · Para streamers',              precio:750,  precioOld:null, tag:'nuevo'  },
+
+      // ALMACENAMIENTO
+      { id:11, cat:'almacenamiento',emoji:'💾', nombre:'SpeedDrive SSD 1TB',     desc:'NVMe PCIe 4.0 · 7000 MB/s lectura · M.2',                  precio:680,  precioOld:850,  tag:'oferta' },
+      { id:12, cat:'almacenamiento',emoji:'💿', nombre:'PortaDrive USB-C 2TB',   desc:'SSD externo · USB 3.2 Gen2 · Compacto',                     precio:890,  precioOld:null, tag:'nuevo'  },
+      { id:13, cat:'almacenamiento',emoji:'🔌', nombre:'FlashPro USB 256GB',     desc:'USB-A 3.1 · Metálico · Transfer 400 MB/s',                  precio:180,  precioOld:220,  tag:'oferta' },
+      { id:14, cat:'almacenamiento',emoji:'📦', nombre:'NASBox 4-Bay',           desc:'Servidor NAS · RAID 0/1/5 · Gigabit LAN',                   precio:2800, precioOld:null, tag:'nuevo'  },
+      { id:15, cat:'almacenamiento',emoji:'💳', nombre:'MicroSD 512GB A2',       desc:'Clase 10 · 160MB/s · Compatible GoPro/Switch',              precio:250,  precioOld:320,  tag:'stock'  },
+
+      // ACCESORIOS
+      { id:16, cat:'accesorios',    emoji:'🔌', nombre:'TurboCharge 140W GaN',   desc:'3 puertos · USB-C + USB-A · Carga rápida',                  precio:280,  precioOld:380,  tag:'nuevo'  },
+      { id:17, cat:'accesorios',    emoji:'🌐', nombre:'Hub USB-C 12 en 1',      desc:'HDMI 4K · SD/MicroSD · Ethernet · PD 100W',                 precio:450,  precioOld:580,  tag:'oferta' },
+      { id:18, cat:'accesorios',    emoji:'📱', nombre:'MagMount Pro',           desc:'Soporte magnético · Ajustable 360° · Auto/Escritorio',      precio:120,  precioOld:null, tag:'stock'  },
+      { id:19, cat:'accesorios',    emoji:'🖥️', nombre:'MonitorArm Dual',        desc:'Brazo doble · VESA 100x100 · Rotación completa',            precio:650,  precioOld:800,  tag:'nuevo'  },
+      { id:20, cat:'accesorios',    emoji:'⚡', nombre:'PowerBank 30000mAh',     desc:'Carga rápida 65W · 3 salidas · Display LED',                precio:390,  precioOld:520,  tag:'oferta' },
+
+      // MONITORES
+      { id:21, cat:'monitores',     emoji:'🖥️', nombre:'VisionX 27" 4K IPS',    desc:'4K UHD · 144Hz · HDR400 · USB-C 90W',                       precio:4500, precioOld:5800, tag:'nuevo'  },
+      { id:22, cat:'monitores',     emoji:'🖥️', nombre:'CurveMax 34" UW',       desc:'UltraWide 3440x1440 · 165Hz · 1ms · VA',                    precio:5200, precioOld:null, tag:'nuevo'  },
+      { id:23, cat:'monitores',     emoji:'🖥️', nombre:'ProColor 24" sRGB',     desc:'100% sRGB · IPS · 5ms · Para diseñadores',                  precio:2800, precioOld:3500, tag:'oferta' },
+      { id:24, cat:'monitores',     emoji:'🖥️', nombre:'GameView 240Hz FHD',    desc:'Full HD · 240Hz · 0.5ms · G-Sync Compatible',               precio:3200, precioOld:3900, tag:'oferta' },
+      { id:25, cat:'monitores',     emoji:'🖥️', nombre:'PortaScreen 15.6"',     desc:'Monitor portátil · USB-C · 1080p · Touch opcional',         precio:1800, precioOld:null, tag:'nuevo'  },
+    ];
+
+    // ---- Estado ----
+    let filtroActivo_CDJ = 'todos';
+    let busqueda_CDJ     = '';
+    let orden_CDJ        = 'default';
+
+    // ---- Render ----
+    function renderProductos_CDJ() {
+      let lista = [...productos_CDJ];
+
+      // Filtro por categoría
+      if (filtroActivo_CDJ !== 'todos') {
+        lista = lista.filter(p => p.cat === filtroActivo_CDJ);
+      }
+
+      // Filtro por búsqueda
+      if (busqueda_CDJ.trim()) {
+        const q = busqueda_CDJ.toLowerCase();
+        lista = lista.filter(p =>
+          p.nombre.toLowerCase().includes(q) ||
+          p.desc.toLowerCase().includes(q)
+        );
+      }
+
+      // Ordenar
+      if (orden_CDJ === 'precio-asc')  lista.sort((a,b) => a.precio - b.precio);
+      if (orden_CDJ === 'precio-desc') lista.sort((a,b) => b.precio - a.precio);
+      if (orden_CDJ === 'nombre')      lista.sort((a,b) => a.nombre.localeCompare(b.nombre));
+
+      document.getElementById('countDisplay_CDJ').textContent = lista.length;
+      const grid = document.getElementById('productsGrid_CDJ');
+
+      if (lista.length === 0) {
+        grid.innerHTML = `<div class="no-results_CDJ">⚠ NO SE ENCONTRARON PRODUCTOS</div>`;
+        return;
+      }
+
+      grid.innerHTML = lista.map(p => {
+        const tagHtml = p.tag === 'nuevo'
+          ? `<span class="tag-nuevo_CDJ">NUEVO</span>`
+          : p.tag === 'oferta'
+          ? `<span class="tag-oferta_CDJ">OFERTA</span>`
+          : `<span class="tag-stock_CDJ">EN STOCK</span>`;
+
+        const oldPriceHtml = p.precioOld
+          ? `<span class="old-price_CDJ">Q. ${p.precioOld.toLocaleString('es-GT')}.00</span>`
+          : '';
+
+        return `
+          <div class="product-card_CDJ reveal_CDJ">
+            <div class="product-img_CDJ">
+              ${p.emoji}
+              ${tagHtml}
+            </div>
+            <div class="product-info_CDJ">
+              <span class="product-cat_CDJ">${catLabel_CDJ(p.cat)}</span>
+              <div class="product-name_CDJ">${p.nombre}</div>
+              <div class="product-desc_CDJ">${p.desc}</div>
+              <div class="product-price-row_CDJ">
+                <span class="product-price_CDJ">Q. ${p.precio.toLocaleString('es-GT')}.00</span>
+                ${oldPriceHtml}
+              </div>
+              <button class="btn-agregar_CDJ">+ Ver Detalles</button>
+            </div>
+          </div>`;
+      }).join('');
+
+      // Re-activar reveal
+      document.querySelectorAll('.reveal_CDJ').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible_CDJ'), i * 50);
+      });
+    }
+
+    function catLabel_CDJ(cat) {
+      const labels = {
+        audio: '🎧 Audio',
+        perifericos: '⌨️ Periféricos',
+        almacenamiento: '💾 Almacenamiento',
+        accesorios: '🔧 Accesorios',
+        monitores: '🖥️ Monitores'
+      };
+      return labels[cat] || cat;
+    }
+
+    // ---- Eventos ----
+    document.querySelectorAll('.filter-btn_CDJ').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn_CDJ').forEach(b => b.classList.remove('active-filter_CDJ'));
+        btn.classList.add('active-filter_CDJ');
+        filtroActivo_CDJ = btn.dataset.filter;
+        renderProductos_CDJ();
+      });
+    });
+
+    document.getElementById('searchInput_CDJ').addEventListener('input', e => {
+      busqueda_CDJ = e.target.value;
+      renderProductos_CDJ();
+    });
+
+    document.getElementById('sortSelect_CDJ').addEventListener('change', e => {
+      orden_CDJ = e.target.value;
+      renderProductos_CDJ();
+    });
+
+    // Hamburguesa
+    const toggle = document.getElementById('navToggle_CDJ');
+    const links  = document.getElementById('navLinks_CDJ');
+    toggle.addEventListener('click', () => links.classList.toggle('open_CDJ'));
+
+    // Scroll reveal observer
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible_CDJ'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+
+    // Init
+    renderProductos_CDJ();
+  </script>
+
+</body>
+</html>
