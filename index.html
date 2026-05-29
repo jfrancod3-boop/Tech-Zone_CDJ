@@ -3,245 +3,231 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechZone | Accesorios Tech de Próxima Generación</title>
-  <link rel="stylesheet" href="styles_CDJ.css" />
+  <title>Productos | TechZone</title>
+  <link rel="stylesheet" href="productos.css" />
 </head>
 <body>
 
   <nav class="navbar_CDJ">
     <a href="index.html" class="nav-logo_CDJ">TECH<span>ZONE</span></a>
-
     <button class="nav-toggle_CDJ" id="navToggle_CDJ" aria-label="Menú">
       <span></span><span></span><span></span>
     </button>
-
     <ul class="nav-links_CDJ" id="navLinks_CDJ">
-      <li><a href="index.html" class="active_CDJ">Inicio</a></li>
-      <li><a href="productos_CDJ.html">Productos</a></li>
-      <li><a href="acerca_CDJ.html">Acerca de</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html" class="active_CDJ">Productos</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
     </ul>
   </nav>
 
-  <section class="hero_CDJ">
-    <div class="hero-content_CDJ">
-      <span class="hero-badge_CDJ">NUEVA COLECCIÓN 2026</span>
-      <h1 class="hero-title_CDJ">
-        El Futuro de la<br />
-        <span class="neon-word_CDJ">Tecnología</span><br />
-        En Tus Manos
-      </h1>
-      <p class="hero-subtitle_CDJ">
-        Accesorios de última generación. Audífonos, teclados, periféricos
-        y más.
-      </p>
-      <div class="hero-buttons_CDJ">
-        <a href="productos_CDJ.html" class="btn-primary_CDJ">VER PRODUCTOS</a>
-        <a href="acerca_CDJ.html" class="btn-secondary_CDJ">CONOCER EQUIPO</a>
-      </div>
-    </div>
-    <div class="scroll-indicator_CDJ"></div>
-  </section>
+  <header class="page-header_CDJ">
+    <span class="page-tag_CDJ">Catálogo Completo</span>
+    <h1 class="page-title_CDJ">Nuestros <span>Productos</span></h1>
+    <p class="page-subtitle_CDJ">Tecnología para cada necesidad</p>
+  </header>
 
-  <div class="stats-bar_CDJ">
-    <div class="stats-inner_CDJ">
-      <div class="stat-item_CDJ">
-        <span class="stat-num_CDJ">10</span>
-        <span class="stat-label_CDJ">Productos</span>
-      </div>
-      <div class="stat-item_CDJ">
-        <span class="stat-num_CDJ">26</span>
-        <span class="stat-label_CDJ">Clientes</span>
-      </div>
-      <div class="stat-item_CDJ">
-        <span class="stat-num_CDJ">5+</span>
-        <span class="stat-label_CDJ">Marcas</span>
-      </div>
-      <div class="stat-item_CDJ">
-        <span class="stat-num_CDJ">4.9★</span>
-        <span class="stat-label_CDJ">Calificación</span>
-      </div>
-    </div>
-  </div>
+  <div class="catalog-wrapper_CDJ">
 
-  <section class="section_CDJ">
-    <div class="section-header_CDJ">
-      <span class="section-tag_CDJ">Ofertas Especiales</span>
-      <h2 class="section-title_CDJ">Promociones Actuales</h2>
-    </div>
-
-    <div class="promo-grid_CDJ">
-
-      <div class="promo-card_CDJ">
-        <span class="promo-badge_CDJ">HOT DEAL</span>
-        <div class="promo-discount_CDJ">30%</div>
-        <h3>AUDIO PREMIUM</h3>
-        <p>Audífonos y auriculares de alta fidelidad con cancelación de ruido activa.</p>
-        <div class="promo-timer_CDJ">
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ" id="hours_CDJ">08</span>
-            <span class="timer-label_CDJ">HRS</span>
-          </div>
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ" id="mins_CDJ">45</span>
-            <span class="timer-label_CDJ">MIN</span>
-          </div>
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ" id="secs_CDJ">00</span>
-            <span class="timer-label_CDJ">SEG</span>
-          </div>
-        </div>
+    <aside class="sidebar_CDJ">
+      <div class="sidebar-block_CDJ">
+        <div class="sidebar-title_CDJ">Categorías</div>
+        <a href="#audio_CDJ" class="filter-btn_CDJ">🎧 Audio <span class="count-badge_CDJ">4</span></a>
+        <a href="#almacenamiento_CDJ" class="filter-btn_CDJ">💾 Almacenamiento <span class="count-badge_CDJ">3</span></a>
+        <a href="#accesorios_CDJ" class="filter-btn_CDJ">🔧 Accesorios <span class="count-badge_CDJ">3</span></a>
       </div>
+    </aside>
 
-      <div class="promo-card_CDJ">
-        <span class="promo-badge_CDJ">FLASH SALE</span>
-        <div class="promo-discount_CDJ">2×1</div>
-        <h3>CABLES Y CARGADORES</h3>
-        <p>Lleva dos cargadores o cables al precio de uno. Solo por esta semana.</p>
-        <div class="promo-timer_CDJ">
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ">3</span>
-            <span class="timer-label_CDJ">DÍAS</span>
-          </div>
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ">12</span>
-            <span class="timer-label_CDJ">HRS</span>
-          </div>
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ">00</span>
-            <span class="timer-label_CDJ">MIN</span>
-          </div>
-        </div>
-      </div>
+    <main class="products-area_CDJ">
 
-      <div class="promo-card_CDJ">
-        <span class="promo-badge_CDJ">NUEVO CLIENTE</span>
-        <div class="promo-discount_CDJ">15%</div>
-        <h3>TU PRIMERA COMPRA</h3>
-        <p>Descuento exclusivo en cualquier producto de tu primera orden en TechZone.</p>
-        <div class="promo-timer_CDJ">
-          <div class="timer-block_CDJ">
-            <span class="timer-num_CDJ">∞</span>
-            <span class="timer-label_CDJ">SIEMPRE</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="products-section_CDJ">
-    <div class="products-inner_CDJ">
-      <div class="section-header_CDJ">
-        <span class="section-tag_CDJ">Recién Llegados</span>
-        <h2 class="section-title_CDJ">Productos Nuevos</h2>
-      </div>
-
+      <h2 class="cat-title_CDJ" id="audio_CDJ">🎧 Audio</h2>
       <div class="products-grid_CDJ">
 
         <div class="product-card_CDJ">
           <div class="product-img_CDJ">
-            🎧
-            <span class="product-new-tag_CDJ">NUEVO</span>
+            <img src="images/sonywh.jpg" alt="Sony WH-1000XM5" class="product-image_CDJ">
+            <span class="tag-nuevo_CDJ">NUEVO</span>
           </div>
           <div class="product-info_CDJ">
-            <span class="product-category_CDJ">Audio</span>
-            <div class="product-name_CDJ">ProSound X9 ANC</div>
-            <div style="color: var(--text-secondary_CDJ); font-size: 0.9rem;">Cancelación de ruido activa · 40h batería</div>
-            <div class="product-price_CDJ">Q. 850.00 <span class="old-price_CDJ">Q. 1,200.00</span></div>
+            <span class="product-cat_CDJ">Audio</span>
+            <div class="product-name_CDJ">Sony WH-1000XM5</div>
+            <div class="product-desc_CDJ">Cancelación de ruido líder · 30h batería · Bluetooth 5.2</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 1,850.00</span>
+              <span class="old-price_CDJ">Q. 2,200.00</span>
+            </div>
           </div>
         </div>
 
         <div class="product-card_CDJ">
           <div class="product-img_CDJ">
-            ⌨️
-            <span class="product-new-tag_CDJ">NUEVO</span>
+            <div class="product-img_CDJ">
+  <img src="images/airpodspro2.jpg" alt="Apple AirPods Pro 2" class="product-image_CDJ">
+
+  <span class="tag-oferta_CDJ">OFERTA</span>
+</div>
+            <span class="tag-oferta_CDJ">OFERTA</span>
           </div>
           <div class="product-info_CDJ">
-            <span class="product-category_CDJ">Periféricos</span>
-            <div class="product-name_CDJ">NeonKeys RGB Pro</div>
-            <div style="color: var(--text-secondary_CDJ); font-size: 0.9rem;">Mecánico · RGB · Switch Red</div>
-            <div class="product-price_CDJ">Q. 650.00 <span class="old-price_CDJ">Q. 900.00</span></div>
+            <span class="product-cat_CDJ">Audio</span>
+            <div class="product-name_CDJ">Apple AirPods Pro 2</div>
+            <div class="product-desc_CDJ">ANC adaptativo · Chip H2 · Estuche MagSafe</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 1,650.00</span>
+              <span class="old-price_CDJ">Q. 1,950.00</span>
+            </div>
           </div>
         </div>
 
         <div class="product-card_CDJ">
           <div class="product-img_CDJ">
-            🖱️
-            <span class="product-new-tag_CDJ">NUEVO</span>
+            <img src="images/jbl.jpg" alt="JBL Charge 5" class="product-image_CDJ">
+            <span class="tag-stock_CDJ">EN STOCK</span>
           </div>
           <div class="product-info_CDJ">
-            <span class="product-category_CDJ">Periféricos</span>
-            <div class="product-name_CDJ">GlideX Mouse 16K</div>
-            <div style="color: var(--text-secondary_CDJ); font-size: 0.9rem;">16,000 DPI · Inalámbrico · RGB</div>
-            <div class="product-price_CDJ">Q. 420.00 <span class="old-price_CDJ">Q. 580.00</span></div>
+            <span class="product-cat_CDJ">Audio</span>
+            <div class="product-name_CDJ">JBL Charge 5</div>
+            <div class="product-desc_CDJ">Altavoz portátil · IP67 · 20h batería · PowerBank</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 780.00</span>
+            </div>
           </div>
         </div>
 
         <div class="product-card_CDJ">
           <div class="product-img_CDJ">
-            🔌
-            <span class="product-new-tag_CDJ">NUEVO</span>
+           <img src="images/bose.jpg" alt="Bose QuietComfort 45" class="product-image_CDJ">
+            <span class="tag-nuevo_CDJ">NUEVO</span>
           </div>
           <div class="product-info_CDJ">
-            <span class="product-category_CDJ">Cargadores</span>
-            <div class="product-name_CDJ">TurboCharge 140W</div>
-            <div style="color: var(--text-secondary_CDJ); font-size: 0.9rem;">GaN · 3 puertos · USB-C/A</div>
-            <div class="product-price_CDJ">Q. 280.00 <span class="old-price_CDJ">Q. 380.00</span></div>
+            <span class="product-cat_CDJ">Audio</span>
+            <div class="product-name_CDJ">Bose QuietComfort 45</div>
+            <div class="product-desc_CDJ">ANC · 24h batería · Modo Aware · Plegable</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 1,950.00</span>
+              <span class="old-price_CDJ">Q. 2,400.00</span>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <div style="text-align: center; margin-top: 3rem;">
-        <a href="productos_CDJ.html" class="btn-primary_CDJ">VER TODOS LOS PRODUCTOS</a>
-      </div>
-    </div>
-  </section>
+      <h2 class="cat-title_CDJ" id="almacenamiento_CDJ">💾 Almacenamiento</h2>
+      <div class="products-grid_CDJ">
 
-  <section class="mv-section_CDJ">
-    <div class="section-header_CDJ">
-      <span class="section-tag_CDJ">Nuestra Empresa</span>
-      <h2 class="section-title_CDJ">Misión &amp; Visión</h2>
-    </div>
+        <div class="product-card_CDJ">
+          <div class="product-img_CDJ">
+            <img src="images/samsungssd.jpg" alt="Samsung 990 Pro 1TB" class="product-image_CDJ">
+            <span class="tag-nuevo_CDJ">NUEVO</span>
+          </div>
+          <div class="product-info_CDJ">
+            <span class="product-cat_CDJ">Almacenamiento</span>
+            <div class="product-name_CDJ">Samsung 990 Pro 1TB</div>
+            <div class="product-desc_CDJ">NVMe PCIe 4.0 · 7,450 MB/s · M.2 2280</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 750.00</span>
+              <span class="old-price_CDJ">Q. 950.00</span>
+            </div>
+          </div>
+        </div>
 
-    <div class="mv-grid_CDJ">
-      <div class="mv-card_CDJ">
-        <span class="mv-icon_CDJ">🎯</span>
-        <h3>MISIÓN</h3>
-        <p>
-          Proveer a nuestros clientes los mejores accesorios tecnológicos del mercado,
-          garantizando calidad, innovación y precios accesibles. Nos comprometemos a
-          ofrecer una experiencia de compra excepcional, conectando a las personas con
-          la tecnología que transforma su vida cotidiana y profesional.
-        </p>
+        <div class="product-card_CDJ">
+          <div class="product-img_CDJ">
+            <img src="images/sandisk.jpg" alt="SanDisk Extreme Pro 2TB" class="product-image_CDJ">
+            <span class="tag-oferta_CDJ">OFERTA</span>
+          </div>
+          <div class="product-info_CDJ">
+            <span class="product-cat_CDJ">Almacenamiento</span>
+            <div class="product-name_CDJ">SanDisk Extreme Pro 2TB</div>
+            <div class="product-desc_CDJ">SSD externo · USB 3.2 · 2,000 MB/s · IP55</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 980.00</span>
+              <span class="old-price_CDJ">Q. 1,200.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card_CDJ">
+          <div class="product-img_CDJ">
+            <img src="images/kingston.jpg" alt="Kingston Canvas 256GB" class="product-image_CDJ">
+            <span class="tag-stock_CDJ">EN STOCK</span>
+          </div>
+          <div class="product-info_CDJ">
+            <span class="product-cat_CDJ">Almacenamiento</span>
+            <div class="product-name_CDJ">Kingston Canvas 256GB</div>
+            <div class="product-desc_CDJ">MicroSD A2 · 170 MB/s · Compatible Switch/GoPro</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 220.00</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mv-card_CDJ">
-        <span class="mv-icon_CDJ">🚀</span>
-        <h3>VISIÓN</h3>
-        <p>
-          Ser la tienda de accesorios tecnológicos líder en Centroamérica para 2030,
-          reconocida por nuestra selección de vanguardia, servicio al cliente de clase
-          mundial y compromiso con la sostenibilidad. Aspiramos a ser el puente entre
-          la tecnología del futuro y el usuario de hoy.
-        </p>
+
+      <h2 class="cat-title_CDJ" id="accesorios_CDJ">🔧 Accesorios</h2>
+      <div class="products-grid_CDJ">
+
+        <div class="product-card_CDJ">
+          <div class="product-img_CDJ">
+            <img src="images/anker.jpeg" alt="Anker 737 GaN 120W" class="product-image_CDJ">
+            <span class="tag-nuevo_CDJ">NUEVO</span>
+          </div>
+          <div class="product-info_CDJ">
+            <span class="product-cat_CDJ">Accesorios</span>
+            <div class="product-name_CDJ">Anker 737 GaN 120W</div>
+            <div class="product-desc_CDJ">Cargador GaN · 3 puertos · USB-C + USB-A · Carga rápida</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 420.00</span>
+              <span class="old-price_CDJ">Q. 550.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card_CDJ">
+          <div class="product-img_CDJ">
+           <img src="images/satechi.jpg" alt="Satechi USB-C Hub 8 en 1" class="product-image_CDJ">
+            <span class="tag-oferta_CDJ">OFERTA</span>
+          </div>
+          <div class="product-info_CDJ">
+            <span class="product-cat_CDJ">Accesorios</span>
+            <div class="product-name_CDJ">Satechi USB-C Hub 8 en 1</div>
+            <div class="product-desc_CDJ">HDMI 4K · SD/MicroSD · USB 3.0 · Ethernet · PD 60W</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 480.00</span>
+              <span class="old-price_CDJ">Q. 620.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card_CDJ">
+          <div class="product-img_CDJ">
+            <img src="images/ankerpowercore.jpg" alt="Anker PowerCore 26800mAh" class="product-image_CDJ">
+            <span class="tag-stock_CDJ">EN STOCK</span>
+          </div>
+          <div class="product-info_CDJ">
+            <span class="product-cat_CDJ">Accesorios</span>
+            <div class="product-name_CDJ">Anker PowerCore 26800mAh</div>
+            <div class="product-desc_CDJ">PowerBank · Carga rápida 65W · 3 salidas · Display LED</div>
+            <div class="product-price-row_CDJ">
+              <span class="product-price_CDJ">Q. 380.00</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </main>
+  </div>
 
   <footer class="footer_CDJ">
     <div class="footer-inner_CDJ">
       <div class="footer-top_CDJ">
-
         <div class="footer-brand_CDJ">
-          <a href="index_CDJ.html" class="nav-logo_CDJ" style="font-size:1.2rem;">TECH<span>ZONE</span></a>
+          <a href="index.html" class="nav-logo_CDJ">TECH<span>ZONE</span></a>
           <p>Accesorios tech de próxima generación. Tu destino para todo lo que necesitas en tecnología.</p>
           <div class="social-links_CDJ" style="margin-top: 1.2rem;">
-            <a href="https://www.facebook.com" target="_blank" class="social-link_CDJ" title="Facebook">f</a>
+            <a href="https://www.facebook.com"  target="_blank" class="social-link_CDJ" title="Facebook">f</a>
             <a href="https://www.instagram.com" target="_blank" class="social-link_CDJ" title="Instagram">in</a>
-            <a href="https://www.youtube.com" target="_blank" class="social-link_CDJ" title="YouTube">▶</a>
+            <a href="https://www.youtube.com"   target="_blank" class="social-link_CDJ" title="YouTube">▶</a>
           </div>
         </div>
-
         <div class="footer-col_CDJ">
           <h4>Navegación</h4>
           <ul>
@@ -250,18 +236,15 @@
             <li><a href="acerca_CDJ.html">Acerca de</a></li>
           </ul>
         </div>
-
         <div class="footer-col_CDJ">
           <h4>Categorías</h4>
           <ul>
-            <li><a href="productos_CDJ.html">Audio</a></li>
-            <li><a href="productos_CDJ.html">Almacenamiento</a></li>
-            <li><a href="productos_CDJ.html">Accesorios</a></li>
+            <li><a href="#audio_CDJ">Audio</a></li>
+            <li><a href="#almacenamiento_CDJ">Almacenamiento</a></li>
+            <li><a href="#accesorios_CDJ">Accesorios</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer-bottom_CDJ">
         <p>© 2026 TECHZONE — TODOS LOS DERECHOS RESERVADOS</p>
         <p>HECHO CON POR JOSE, CARLOS, DANIEL</p>
@@ -270,3 +253,4 @@
   </footer>
 </body>
 </html>
+
